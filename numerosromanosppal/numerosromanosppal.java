@@ -2,7 +2,7 @@ package numerosromanosppal;
 
 /** @author Nelson  */
 
-public class NumerosRomanos {
+public class numerosromanosppal {
 
     public static void main(String[] args) {
         // TODO code application logic here

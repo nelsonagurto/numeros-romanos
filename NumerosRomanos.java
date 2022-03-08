@@ -1,16 +1,16 @@
 class NumerosRomanos {
     
-    public static Object numToRomano(int num){
+    public String numToRomano(Integer num){
      String Resultado="";
      
         if (num>0 && num<10){
-            traeUnidad(num);
+            Resultado = traeUnidad(num);
         } 
         if (num>9 && num<100){
-            traeDecena(num);
+            Resultado =traeDecena(num);
         }   
         if (num>99 && num<1000){
-            traeCentena(num);
+            Resultado = traeCentena(num);
         } 
         if (num==1000){
             Resultado="M";
@@ -19,7 +19,7 @@ class NumerosRomanos {
     return Resultado;
     }
     
-    public static Object traeUnidad(int num){
+    public static String  traeUnidad(int num){
         String Resultado="";
         
         switch(num){
@@ -56,7 +56,7 @@ class NumerosRomanos {
     return Resultado;
     }
     
-        public static Object traeDecena(int num){
+        public static String  traeDecena(int num){
         String Resultado="";
         
         switch(num){
@@ -93,7 +93,7 @@ class NumerosRomanos {
     return Resultado;
     }
         
-    public static Object traeCentena(int num){
+    public static String traeCentena(int num){
         String Resultado="";
         
         switch(num){
